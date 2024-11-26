@@ -1,40 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Carousel</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 <body>
-    <!-- Write your code here -->
-	<div id="carouselExampleAutoplaying myCarousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner myCarousel">
-    <div class="carousel-item first-slide">
-      <img src="https://media.istockphoto.com/id/642438552/photo/feeding-the-world-one-seedling-at-a-time.jpg?s=612x612&w=0&k=20&c=DNe8g3G_0lUwrNrpvhsWy_M4Xl_o4dEqt_TtND9GfYY=" class="d-block w-100" alt="...">
+    <!-- Carousel -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+            <div class="item first-slide w-100">
+                <img src="https://media.istockphoto.com/id/642438552/photo/feeding-the-world-one-seedling-at-a-time.jpg?s=612x612&w=0&k=20&c=DNe8g3G_0lUwrNrpvhsWy_M4Xl_o4dEqt_TtND9GfYY=" alt="First Slide">
+                <div class="carousel-caption">
+                    <h3>First Slide</h3>
+                </div>
+            </div>
+            <div class="item second-slide">
+                <img src="https://media.istockphoto.com/id/1254182237/photo/aerial-top-down-view-of-man-working-in-vegetable-garden.jpg?s=612x612&w=0&k=20&c=djy7-QKa459RKPF8x5fdLlu8xctBIYVFmOEN266kjwU=" alt="Second Slide">
+                <div class="carousel-caption">
+                    <h3>Second Slide</h3>
+                </div>
+            </div>
+            <div class="item third-slide active">
+                <img src="https://media.istockphoto.com/id/1246366598/photo/a-scenic-view-of-boats-under-a-blue-sky-in-backwaters-situated-in-allepey-town-located-in.jpg?s=612x612&w=0&k=20&c=YBv_3nP-6YjvN9JRhaNsBmq8ke4azCgvGLS5h3r9jSk=" alt="Third Slide">
+                <div class="carousel-caption">
+                    <h3>Third Slide</h3>
+                </div>
+            </div>
+            <div class="item fourth-slide">
+                <img src="https://media.istockphoto.com/id/1347088244/photo/kerala-most-beautiful-place-of-india.jpg?s=612x612&w=0&k=20&c=oBVJ6rUfq1YOua_4Oqhj0B1TFwcMFhniaysLJEN_eh8=" alt="Fourth Slide">
+                <div class="carousel-caption">
+                    <h3>Fourth Slide</h3>
+                </div>
+            </div>
+            <div class="item fifth-slide">
+                <img src="https://media.istockphoto.com/id/909105552/photo/casale-marittimo-village-vineyards-and-landscape-in-maremma-tuscany-italy.jpg?s=612x612&w=0&k=20&c=IFPZ9Qu1tLabQNGxv63W7DhbbzG9U4MOU_G8Nh3J5ko=" alt="Fifth Slide">
+                <div class="carousel-caption">
+                    <h3>Fifth Slide</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-    <div class="carousel-item second-slide">
-      <img src="https://media.istockphoto.com/id/916057056/photo/surreal-giant-grapefruits-on-a-field.jpg?s=612x612&w=0&k=20&c=la7dNhAgJNwwnV2OLHH1hgBzQIfNc0pqdiR20FsF04s=" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item active third-slide">
-      <img src="https://media.istockphoto.com/id/1246366598/photo/a-scenic-view-of-boats-under-a-blue-sky-in-backwaters-situated-in-allepey-town-located-in.jpg?s=612x612&w=0&k=20&c=YBv_3nP-6YjvN9JRhaNsBmq8ke4azCgvGLS5h3r9jSk=" class="d-block w-100" alt="...">
-    </div>
-	  <div class="carousel-item fourth-slide">
-      <img src="https://media.istockphoto.com/id/611075624/photo/alfesco-mediterranean-meal.jpg?s=612x612&w=0&k=20&c=vio0DajENK6H9_qRvZP5_KpVJs1ECu-TMT21Yy3wWzs=" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item fifth-slide">
-      <img src="https://media.istockphoto.com/id/624183176/photo/terraced-rice-field-in-mu-cang-chai-vietnam.jpg?s=612x612&w=0&k=20&c=8r_qT3g_x58wtOr6WKNtZDN7D1c4yKWttcfLJDnB9EA=" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev carousel-control left" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next carousel-control right" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
- 
 </html>
